@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const root = ReactDOM.createRoot(document.getElementById('root')); // React DOM API를 통해서 리액트 관련된 화면을 만들어달라!
+root.render( // render : 화면에 그린다
   <React.StrictMode>
     <App />
   </React.StrictMode>
