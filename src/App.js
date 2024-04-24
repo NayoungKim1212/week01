@@ -1,30 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+function App() {
+  
+	// <---- 자바스크립트 영역 ---->
+  // function onClickButtonHandler () {
+  //   alert("클릭");
+  // }
+  const onClickButtonHandler = () => {
+    alert("클릭");
+  }
 
-function App() { // App : component component => 대문자로 시작
-  // 자바스크립트를 쓸 수 있는 영역
-  // const x = 1;
-  // function testFunc() {
-  // }  return 문 위 함수가 시작되기 전
   return (
-    // JSX 문법(HTML X)
-    // Javascript 문법을 사용하고 싶을 땐 {}
-    <div className="App">
-      <header className="App-header">
-       {/* ex) {testFunc} */}
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  /* <---- HTML/JSX 영역  ---->*/
+    <div
+      style={
+        {
+        height: '100vh',
+        display: ' flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }
+    }
+    >
+   {/* 이곳에 퀴즈를 위한 html 코드를 작성해 주세요 */}
+   <span>이것은 내가 만든 App 컴포넌트 입니다.</span>
+   <button onClick={function() {
+    alert("클릭");
+   }}>클릭</button>
     </div>
   );
 }
